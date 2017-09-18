@@ -1,0 +1,7 @@
+#php_value display_errors 1
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^preview/(.*)$ /thumb\.php?src=$1 [L]
+
